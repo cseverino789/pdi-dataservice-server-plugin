@@ -38,7 +38,7 @@
     <service id="dataServiceContext" ref="context" interface="org.pentaho.di.trans.dataservice.Context"></service>
 
     <reference id="lineageClient" interface="org.pentaho.metaverse.api.ILineageClient"/>
-    <reference id="cacheManager" interface="org.pentaho.caching.api.PentahoCacheManager"/>
+    <reference id="cacheManager" interface="org.pentaho.caching.api.PentahoCacheManager" availability="optional"/>
 
     <reference-list id="pushDownFactories" interface="org.pentaho.di.trans.dataservice.optimization.PushDownFactory"
                     availability="optional"/>
